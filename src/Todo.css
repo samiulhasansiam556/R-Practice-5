@@ -1,0 +1,98 @@
+/* Base styles for table */
+table {
+  width: 70%;
+  margin-left: 15%;
+  border-collapse: collapse;
+  font-size: 18px;
+  text-align: center;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  text-align: center; 
+  font-weight: bold; 
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.container {
+  display: flex;
+  margin: 60px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+/* Mobile responsive styles */
+
+@media (max-width: 480px) {
+
+
+  .container {
+    flex-direction: column;
+    margin: 0px;
+
+    background-color: #ffffff;
+  }
+
+  table {
+    width: 30%;
+    margin: 0;
+    font-size: 14px;
+    margin-left: 10%;
+  }
+
+  th, td {
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 5px 8px;
+    margin: 2px 2px;
+    font-size: 12px;
+  }
+
+  table, th, td, tr {
+   
+  }
+
+  th {
+  
+  }
+
+  tr {
+    margin-bottom: 10px;
+  }
+
+  td {
+    text-align: right;
+
+    position: relative;
+  }
+
+
+}
